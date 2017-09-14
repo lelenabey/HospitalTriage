@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+ 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editPatient"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+    <ScrollView android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp">
+			    
+				<LinearLayout android:id="@+id/addPatient" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					
+				    <LinearLayout android:orientation="horizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+				        
+				        <TextView
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/dias"
+					        android:singleLine="true"
+					        android:layout_weight="1" />
+				    
+					    <TextView
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/syst"
+					        android:singleLine="true"
+					        android:layout_weight="1" />
+				        
+				    </LinearLayout>
+				    
+				    <LinearLayout android:orientation="horizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+				        
+				        <EditText android:id="@+id/Systolic"
+				            android:inputType="number"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/dias"
+					        android:singleLine="true"
+					        android:layout_weight="1" />
+				    
+					    <EditText android:id="@+id/Diastolic"
+					        android:inputType="number"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/syst"
+					        android:singleLine="true"
+					        android:layout_weight="1" />
+				        
+				    </LinearLayout>
+				    
+				    <TextView android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/temp"
+					        android:singleLine="true"
+					        android:layout_marginTop="@dimen/marg"/>
+				    
+				    <EditText android:id="@+id/Temperature"
+					        android:inputType="number"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/temp"
+					        android:singleLine="true"
+					        android:layout_marginTop="@dimen/marg"/>
+				    
+				    <TextView android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/hr"
+					        android:singleLine="true"
+					        android:layout_marginTop="@dimen/marg"/>
+				    
+				    <EditText android:id="@+id/HeartRate"
+					        android:inputType="number"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/hr"
+					        android:singleLine="true"
+					        android:layout_marginTop="@dimen/marg"/>
+
+				    <Button
+				        android:id="@+id/add_Patient"
+				        android:layout_width="100dp"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="right"
+				        android:text="@string/savePatient"
+				        android:onClick="savePatient" />
+	
+				</LinearLayout>
+				
+			</ScrollView>
+			
+    			<TextView android:layout_width="fill_parent"
+    			    android:layout_height="wrap_content"
+    			    android:layout_marginTop="18dp" 
+    			    android:text="@string/olderData"/>
+			
+    			<ListView android:id="@+id/listView2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent">
+			        
+			    </ListView>
+ 
+</LinearLayout>

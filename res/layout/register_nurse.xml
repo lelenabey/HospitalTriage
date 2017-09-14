@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="@dimen/pad">
+				        
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:text="@string/yourID"
+			android:textSize="18sp" />
+				    
+		<TextView android:id="@+id/idnum"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:paddingLeft="10dp"
+			android:layout_gravity="center_vertical"
+			android:textIsSelectable="true" />
+				        
+	</LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="@dimen/pad">
+				        
+		<EditText android:id="@+id/fname"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:hint="@string/fname"
+			android:singleLine="true"
+			android:layout_weight="1" />
+				    
+		<EditText android:id="@+id/lname"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:hint="@string/lname"
+			android:singleLine="true"
+			android:layout_weight="1" />
+				        
+	</LinearLayout>
+    
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingTop="@dimen/pad"
+        android:hint="@string/password"
+        android:singleLine="true"  />
+    
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingTop="@dimen/pad"
+        android:hint="@string/RetypePassword"
+        android:singleLine="true"  />
+    
+    <EditText
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:paddingTop="@dimen/pad"
+        android:clickable="false" 
+        android:cursorVisible="false" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false" />
+    
+    <Button
+	        android:id="@+id/regNurse"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:text="@string/reg"
+	        android:onClick="regNurse" />
+
+</LinearLayout>

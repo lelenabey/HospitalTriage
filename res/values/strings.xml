@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hospital</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_header">Login</string>
+    <string name="username">ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="save">save password</string>
+    <string name="savePatient">Save</string>
+    <string name="editPatient">Edit Patient</string>
+    <string name="reg">Register</string>
+    <string name="title_activity_actions">Actions</string>
+    <string name="yourID">Your ID: </string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="RetypePassword">Retype Password</string>
+    <string name="patientName">Patient Name</string>
+    <string name="healthCardNumber">Health Card Number</string>
+    <string name="birthday">Date of Birth</string>
+    <string name="dias">Diastolic</string>
+    <string name="syst">Systolic</string>
+    <string name="temp">Temperature</string>
+    <string name="hr">Heart Rate</string>
+    <string name="Symp">Symptoms Description</string>
+    <string name="add">Add</string>
+    <string name="title_activity_edit_patient">Edit Patient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="olderData">Older Data</string>
+
+</resources>

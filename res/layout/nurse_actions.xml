@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Actions" >
+
+    
+	<TabHost android:id="@+id/tabhost" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		
+		<TabWidget android:id="@android:id/tabs" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"/>
+		
+		<FrameLayout android:id="@android:id/tabcontent" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent">
+			
+			<ScrollView android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginTop="75dp">
+			    
+				<LinearLayout android:id="@+id/addPatient" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+				    
+				    <EditText android:id="@+id/patientName"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/patientName"
+				        android:singleLine="true" />
+				    
+				    <EditText android:id="@+id/healthCardNumber"
+				        android:inputType="number"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="@dimen/marg"
+				        android:hint="@string/healthCardNumber"
+				        android:singleLine="true" />
+				    
+				    <LinearLayout android:orientation="vertical"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="@dimen/marg">
+				        
+				        <TextView android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/birthday"
+					        android:textSize="18sp"
+					        android:paddingLeft="13dp" />
+				        
+				        <DatePicker android:id="@+id/date_picker"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:calendarViewShown="false"
+					        android:layout_gravity="center" />
+				        
+				    </LinearLayout>
+				    
+				    <LinearLayout android:orientation="horizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+				        
+				        <EditText android:id="@+id/Systolic"
+				            android:inputType="number"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/dias"
+					        android:singleLine="true"
+					        android:layout_weight="1" />
+				    
+					    <EditText android:id="@+id/Diastolic"
+					        android:inputType="number"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/syst"
+					        android:singleLine="true"
+					        android:layout_weight="1" />
+				        
+				    </LinearLayout>
+				    
+				    <EditText android:id="@+id/Temperature"
+					        android:inputType="number"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/temp"
+					        android:singleLine="true"
+					        android:layout_marginTop="@dimen/marg"/>
+				    
+				    <EditText android:id="@+id/HeartRate"
+					        android:inputType="number"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:hint="@string/hr"
+					        android:singleLine="true"
+					        android:layout_marginTop="@dimen/marg"/>
+				    
+				    <EditText
+				        android:id="@+id/SymptomDescription"
+				        android:layout_width="fill_parent"
+				        android:layout_height="200dp"
+				        android:gravity="top"
+       					android:inputType="textMultiLine"
+				        android:hint="@string/Symp"
+				        android:layout_marginTop="@dimen/marg" />
+				
+				    <Button
+				        android:id="@+id/add_Patient"
+				        android:layout_width="100dp"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="right"
+				        android:text="@string/add"
+				        android:onClick="addPatient" />
+	
+				</LinearLayout>
+				
+			</ScrollView>
+				
+			<LinearLayout android:id="@+id/updatePatient" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginTop="75dp">
+			    
+			    <ListView android:id="@+id/listView"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent">
+			        
+			    </ListView>
+			    
+			</LinearLayout>
+		
+		</FrameLayout> 
+		    
+	</TabHost>
+    
+</LinearLayout>
